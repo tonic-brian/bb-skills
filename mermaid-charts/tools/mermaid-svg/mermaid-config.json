@@ -1,0 +1,10 @@
+{
+  "htmlLabels": false,
+  "look": "classic",
+  "handDrawnSeed": 1,
+  "flowchart": {
+    "useMaxWidth": false,
+    "htmlLabels": false,
+    "wrappingWidth": 240
+  }
+}

@@ -1,0 +1,7 @@
+# The install belongs outside the repository, made by `python mermaid_svg.py setup`. These keep one made here by
+# mistake, as npm run in this folder would make, out of commits.
+/node_modules/
+/browsers/
+/browsers.partial/
+/installed.json
+/setup.lock

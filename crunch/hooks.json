@@ -1,0 +1,17 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "*",
+      "hooks": [
+        { "type": "command", "command": "node", "args": ["${SKILL_DIR}/hooks/suggest-compact.js"], "timeout": 10 }
+      ]
+    }
+  ],
+  "PostCompact": [
+    {
+      "hooks": [
+        { "type": "command", "command": "node", "args": ["${SKILL_DIR}/hooks/on-compact.js"], "timeout": 10 }
+      ]
+    }
+  ]
+}

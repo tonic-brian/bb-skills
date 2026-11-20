@@ -1,0 +1,44 @@
+{
+  "name": "crunch",
+  "version": "0.3.0",
+  "description": "The crunch skill's nudge where the developer sees it: the context's size under the prompt, a toast and a log line at each nudge, and a band that compacts on a focus the session drafts.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showStatusLine": {
+      "type": "boolean",
+      "title": "Status line",
+      "description": "The context's size under the prompt, with a hint once the hook has nudged",
+      "default": true
+    },
+    "showToast": {
+      "type": "boolean",
+      "title": "Toast",
+      "description": "A toast at each nudge, where something other than a terminal draws the session",
+      "default": true
+    },
+    "showLog": {
+      "type": "boolean",
+      "title": "Log line",
+      "description": "A line in the transcript at each nudge, where something other than a terminal draws the session",
+      "default": true
+    },
+    "showBand": {
+      "type": "boolean",
+      "title": "Band",
+      "description": "Above the prompt from each nudge until dismissed or used: what fills the context, and Compact now beside the focus the session drafts for /compact",
+      "default": false
+    },
+    "showNotification": {
+      "type": "boolean",
+      "title": "Notification",
+      "description": "A native notification at each nudge, through the terminal's notification channel",
+      "default": false
+    },
+    "addNote": {
+      "type": "boolean",
+      "title": "Note after compacting",
+      "description": "After each compaction, a note Claude reads, telling it to read the project's PROGRESS.md first, where there is one",
+      "default": true
+    }
+  }
+}
